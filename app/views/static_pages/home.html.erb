@@ -1,0 +1,24 @@
+<% provide(:title, 'Home') %>
+
+<div class="mainCont">
+    
+    <%= image_tag("logo.jpeg", alt: "Welcome Logo", :class => "welcomeIm") %>
+
+    <h1>Home</h1>
+    <p>Welcome to your first home page</p>
+    <hr>
+    
+    <%= render 'layouts/categories' %>
+
+</div>
+
+<br>
+<br>
+
+<div class="mainCont">
+
+    <h2>Search</h2>
+    
+    <%= render 'layouts/search' %>
+    
+</div>

@@ -1,0 +1,25 @@
+<div class="itemsContainer">
+    
+    <h1>You Looked for these items</h1>
+    
+    <% if @items.length ==0 %>
+    
+        <h2>Gavin has lots of Items just not here</h2>
+    
+    <% end %>
+    
+    <% @items.each do |item| %>
+    
+        <div class="itemhols">
+            
+            <h1><%= item.title %></h1>
+            
+            <%= image_tag item.image_url, :class=>"itemholsIm" %>
+            
+            <p>This item is in the category: <%= item.category %></p>
+        
+        </div>
+    
+    <% end %>
+    
+</div>
